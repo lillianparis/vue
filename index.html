@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple</title>
+    </head>
+    <body>
+        <input type="text" id="input" v-model="message">
+        <p>The value of the input is: {{message}}</p>
+
+        <script>
+
+            let data= {
+                message: 'Hello World'
+            };
+
+            new Vue({
+            el:'#root',
+            data: data
+        })
+        </script>
+    </body>
+</html>
