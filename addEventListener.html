@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lists</title>
+</head>
+
+<body>
+    <div id="root">
+        <ul>
+            <li v-for="name in names" v-text="name"></li>
+        </ul>
+        <input id="input" type="text" v-model="newName">
+        <!-- Adding the directive 'v-on' and passing in the click argument. Anything after the colon is the argument-->
+        <!-- <button @click="addName">Add Name</button> '@' means 'when we click on it' -->
+        <button v-on:click="addName">Add Name</button>
+
+    </div>
+    <script src="https://unpkg.com/vue@2"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#root',
+            data: {
+                newName: '',
+                names: ['Joe', 'Mary', 'Jane', 'Jack']
+            },
+            methods:{
+                addNamen() {
+                    this.names(this.newName)
+                }
+            },
+        });
+
+    </script>
+</body>
+
+</html>
