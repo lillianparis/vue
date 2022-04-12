@@ -4,19 +4,22 @@
         <title>Simple</title>
     </head>
     <body>
+<!-- // Binding to a value using 'v-model'  -->
+<div id="root">
         <input type="text" id="input" v-model="message">
-        <p>The value of the input is: {{message}}</p>
+        <p>The value of the input is: {{ message }}.</p>
+</div>
+<script src="https://unpkg.com/vue@2"></script>
 
         <script>
-
-            let data= {
-                message: 'Hello World'
-            };
-
+// Create a Vue instance, specifiy some data(model)
             new Vue({
             el:'#root',
-            data: data
+            data: {
+                message: 'Hello World'
+            }
         })
+
         </script>
     </body>
 </html>
