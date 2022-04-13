@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <div id="root" class="container">
+        <!-- Coupon is a component -->
+        <!-- The child tell parent is coupon is applied -->
+        <modal>
+            <!-- Use the 'template' tag if you don't want the information to show inside of another tag in the DevTools. If you used a div tag for the header then it would show a <div> inside a <p> tag and that isn't correct -->
+            <template slot="header">My Title</template>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nam atque suscipit molestias eum voluptatibus cum doloremque! Ullam provident deserunt cumque laudantium fugiat ducimus? Accusantium.
+            <div slot="footer">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+            </div>
+        </modal>
+    
+
+    <script src="https://unpkg.com/vue@2.6.14"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

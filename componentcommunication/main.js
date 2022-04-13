@@ -3,13 +3,13 @@ Vue.component('coupon', {
 
     methods: {
         onCouponApplied() {
-           this.$emit('applied')
+            this.$emit('applied')
         }
     }
 });
 
 // This is the root instance (parent)
-new Vue ({
+new Vue({
     el: '#root',
     methods: {
         onCouponApplied() {
