@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <div id="root" class="container">
+        <!-- This h1 tag fits inline and completion rate is rendered dynamically -->
+        <!-- The inline template means everything in the progressview tag should be a template-->
+<progress-view inline-template>
+    <div>
+    <h1>Your Progress Through This Course Is {{ completionRate }}</h1>
+    <p><button @click="completionRate += 10">Update Completion Rate</button></p>
+</div>
+</progress-view>
+    
+
+    <script src="https://unpkg.com/vue@2.6.14"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
